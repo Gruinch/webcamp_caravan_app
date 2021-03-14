@@ -25,7 +25,10 @@ class BlogsController < ApplicationController
     blog=Blog.find(params[:id])
     blog.update(blog_params)
     redirect_to blog_path(blog)
-    en
+  end 
+  
+  def destroy
+  end
   
   private
   def blog_params
